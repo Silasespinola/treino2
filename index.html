@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendamento - Consultório</title>
+
+  <!-- Link para o arquivo CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Título principal da página -->
+  <h1>Agendamento de Consulta</h1>
+
+  <!-- Formulário de agendamento -->
+  <form id="formAgendamento">
+    
+    <!-- Campo para nome -->
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" required />
+
+    <!-- Campo para celular -->
+    <label for="celular">Celular:</label>
+    <input type="tel" id="celular" required />
+
+    <!-- Campo para escolher a data -->
+    <label for="data">Data da Consulta:</label>
+    <input type="date" id="data" required />
+
+    <!-- Campo para escolher o horário -->
+    <label for="horario">Horário:</label>
+    <input type="time" id="horario" required />
+
+    <!-- Dropdown com opções de especialidade -->
+    <label for="especialidade">Especialidade:</label>
+    <select id="especialidade" required>
+      <option value="">Selecione...</option>
+      <option value="Clínico Geral - R$100">Clínico Geral - R$100</option>
+      <option value="Dermatologista - R$150">Dermatologista - R$150</option>
+      <option value="Cardiologista - R$200">Cardiologista - R$200</option>
+    </select>
+
+    <!-- Botão para enviar o formulário -->
+    <button type="submit">Agendar Consulta</button>
+  </form>
+
+  <!-- Área onde o resultado do agendamento vai aparecer -->
+  <div id="areaResultado">
+    <h2>📋 Último agendamento</h2>
+    <div id="resultado"></div>
+  </div>
+
+  <!-- Link para o JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
